@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
     return Consumer<ThemeProvider>(
       builder: (context, themeProvider, child) {
         return MaterialApp(
-          title: 'SIWES360',
+          title: 'CLEARANCE360',
           theme: CLEARANCE360.lightTheme.copyWith(
             textTheme: GoogleFonts.montserratTextTheme(
               CLEARANCE360.lightTheme.textTheme,
@@ -55,6 +55,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           themeMode: themeProvider.themeMode,
+          
           home: const SplashScreen(),
           debugShowCheckedModeBanner: false,
         );

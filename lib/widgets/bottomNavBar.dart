@@ -6,8 +6,6 @@ import 'package:clearance360/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
-
 class BottomNavBar extends StatelessWidget {
   final int currentIndex;
 
@@ -73,8 +71,12 @@ class BottomNavBar extends StatelessWidget {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.bookBookmark),
-            label: "Logbook",
+            icon: FaIcon(FontAwesomeIcons.codePullRequest),
+            label: "Requests",
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(FontAwesomeIcons.bell),
+            label: "Alerts",
           ),
           BottomNavigationBarItem(
             icon: FaIcon(FontAwesomeIcons.person),
